@@ -25,22 +25,31 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#features",
-    label: "Features",
+    href: "#what",
+    label: "What Is It?",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#howItWorks",
+    label: "How It Works",
+  },
+    {
+    href: "#roadmap",
+    label: "Roadmap",
   },
   {
-    href: "#pricing",
-    label: "Pricing",
+    href: "#tokenomics",
+    label: "Tokenomics",
+  },
+  {
+    href: "#socials",
+    label: "Socials",
   },
   {
     href: "#faq",
     label: "FAQ",
   },
 ];
+
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
