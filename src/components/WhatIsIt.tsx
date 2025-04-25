@@ -1,10 +1,15 @@
 import HodLottoBG from "../assets/HodLotto_BG.png";
+import HodLottoBackground1 from "../assets/HodLotto_Background_1.jpeg";
+import HodLottoBackground2 from "../assets/HL_BG_5.jpeg";
+import HodLottoBackground3 from "../assets/HL_BG_1.jpeg";
+import HodLottoBackground4 from "../assets/HL_BG_5.jpeg";
 
 export const WhatIsIt = () => {
   const panels = [
     {
       title: "Overview",
       text: "HODLOTTO is the first-of-its-kind NFT-powered lottery system that rewards holders with ongoing lottery entries. Unlike traditional lotteries where tickets are single-use, HODLOTTO transforms your participation into lasting digital assets.",
+      image: HodLottoBackground1, // Replace with image path later
     },
     {
       title: "Core Mechanics",
@@ -14,6 +19,7 @@ export const WhatIsIt = () => {
         "Higher tiers = more weighted chances",
         "Soulbound, non-transferable NFTs",
       ],
+      image: HodLottoBackground2,
     },
     {
       title: "Long-Term Utility",
@@ -22,6 +28,7 @@ export const WhatIsIt = () => {
         "Multiple NFTs stack your chances",
         "Future benefits for loyal holders",
       ],
+      image: HodLottoBackground3,
     },
     {
       title: "Built on Blockchain",
@@ -30,6 +37,7 @@ export const WhatIsIt = () => {
         "Upgradeable contracts (OpenZeppelin)",
         "Immutable history of all entries",
       ],
+      image: HodLottoBackground4,
     },
   ];
 
@@ -52,15 +60,22 @@ export const WhatIsIt = () => {
 
       {/* Horizontal Info Boxes */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {panels.map(({ title, text, list }, i) => (
+        {panels.map(({ title, text, list, image }, i) => (
           <div
             key={i}
-            className="bg-muted/40 border rounded-xl p-6 space-y-4 shadow-md"
+            className="bg-muted/40 border rounded-xl p-6 space-y-4 shadow-md text-center"
           >
+            {image && (
+              <img
+                src={image}
+                alt={`${title} visual`}
+                className="w-full h-32 object-contain mx-auto"
+              />
+            )}
             <h3 className="text-xl font-semibold">{title}</h3>
             {text && <p className="text-muted-foreground text-sm">{text}</p>}
             {list && (
-              <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1">
+              <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1 text-left">
                 {list.map((item, j) => (
                   <li key={j}>{item}</li>
                 ))}
