@@ -8,34 +8,37 @@ export const WhatIsIt = () => {
   const panels = [
     {
       title: "Overview",
-      text: "HODLOTTO is the first-of-its-kind NFT-powered lottery system that rewards holders with ongoing lottery entries. Unlike traditional lotteries where tickets are single-use, HODLOTTO transforms your participation into lasting digital assets.",
+      text: "HODLOTTO is the first NFT-powered lottery where your ticket lasts forever—and your odds grow the longer you hold.This isn’t just another game of chance. It’s a Web3-powered system that rewards the dedicated. Instead of buying throwaway tickets, you mint soulbound NFTs that lock you into every future draw. The more you HODL, the stronger your position becomes.",
       image: HodLottoBackground1, // Replace with image path later
     },
     {
       title: "Core Mechanics",
       list: [
-        "10 NFT tiers with different prices and weights",
-        "Permanent entry for every draw",
-        "Higher tiers = more weighted chances",
-        "Soulbound, non-transferable NFTs",
+        "10 NFT Tiers – Choose your entry level. Higher tiers = better odds.",
+        "Permanent Draw Access – Each NFT gives you lifetime entry.",
+        "Weighted Chances – Higher tier = more weight in every draw. = more weighted chances",
+        "Soulbound Ownership – Your NFTs are non-transferable, locking your spot.",
+        "Why it matters: You’re not just playing—you’re building a position in a fair, transparent system where your chances improve the longer you stay."
       ],
       image: HodLottoBackground2,
     },
     {
       title: "Long-Term Utility",
       list: [
-        "Compounding odds over time",
-        "Multiple NFTs stack your chances",
-        "Future benefits for loyal holders",
+        "Compounding Power – Odds stack and compound over time.",
+        "Stack NFTs – Multiple NFTs = exponentially better chances.",
+        "Loyalty Pays – Early adopters unlock future benefits and exclusive rewards.",
+        "Bonus: Your strategy isn’t just about luck—it’s about positioning. Play it smart, and your compounding edge can pay off big."
       ],
       image: HodLottoBackground3,
     },
     {
       title: "Built on Blockchain",
       list: [
-        "On-chain randomness & draw logic",
-        "Upgradeable contracts (OpenZeppelin)",
-        "Immutable history of all entries",
+        "On-chain randoOn-Chain Randomness – Every draw is provably fair and tamper-proof.",
+        "Upgradeable Smart Contracts – Built for the long game.",
+        "Immutable History – Every entry, every win, forever on-chain.",
+        " Web3 Confidence: Trustless, transparent, and impossible to rig. Everything is visible, and your participation is etched into the blockchain."
       ],
       image: HodLottoBackground4,
     },

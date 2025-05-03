@@ -17,25 +17,19 @@ const socials: SocialProps[] = [
   {
     platform: "Twitter",
     handle: "@hodlotto",
-    url: "https://twitter.com/hodlotto",
+    url: "https://x.com/HodLotto_",
     icon: "https://cdn-icons-png.flaticon.com/512/124/124021.png", // Twitter icon
   },
   {
     platform: "Discord",
     handle: "Join our server",
-    url: "https://discord.gg/hodlotto",
+    url: "https://discord.gg/WCGFH3vr",
     icon: "https://cdn-icons-png.flaticon.com/512/5968/5968756.png",
-  },
-  {
-    platform: "GitHub",
-    handle: "github.com/hodlotto",
-    url: "https://github.com/hodlotto",
-    icon: "https://cdn-icons-png.flaticon.com/512/733/733553.png",
   },
   {
     platform: "Telegram",
     handle: "@hodlotto_official",
-    url: "https://t.me/hodlotto_official",
+    url: "https://t.me/HodLotto",
     icon: "https://cdn-icons-png.flaticon.com/512/2111/2111646.png",
   },
 ];

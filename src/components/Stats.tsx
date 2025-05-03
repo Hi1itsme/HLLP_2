@@ -5,9 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+
 
 interface StatCardProps {
   stat: string;
@@ -20,19 +18,19 @@ const statCards: StatCardProps[] = [
   {
     stat: "10",
     label: "NFT Tiers",
-    description: "Strategically choose from 10 permanent NFT tiers with varying odds and pricing.",
+    description: "10 NFT Tiers – Scale your odds, choose your level.",
     
   },
   {
     stat: "2x+",
     label: "Weighted Entry Multipliers",
-    description: "Each higher tier gives exponentially more chances to win through weighted entries.",
+    description: "2x+ Multipliers – Higher tiers boost your chances exponentially.",
     
   },
   {
     stat: "100%",
     label: "On-Chain Transparency",
-    description: "All draws, NFTs, and rewards are handled through immutable smart contracts.",
+    description: "100% On-Chain Transparency – Every draw, forever verifiable.",
     
   },
 ];
@@ -58,11 +56,7 @@ export const Stats = () => {
             <CardContent className="text-muted-foreground text-sm">{description}</CardContent>
 
             <CardFooter>
-              <img
-                
-                alt={label}
-                className="w-[200px] lg:w-[300px] mx-auto"
-              />
+              
             </CardFooter>
           </Card>
         ))}

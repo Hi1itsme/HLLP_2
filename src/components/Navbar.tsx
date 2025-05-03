@@ -64,7 +64,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <LogoIcon />
-              ShadcnUI/React
+              HodLotto
             </a>
           </NavigationMenuItem>
 
@@ -138,7 +138,7 @@ export const Navbar = () => {
           <div className="hidden md:flex gap-2">
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa/shadcn-landing-page.git"
+              href="https://github.com/Hi1itsme/HLLP_2"
               target="_blank"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >

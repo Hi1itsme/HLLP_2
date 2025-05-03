@@ -1,6 +1,20 @@
-html {
-  scroll-behavior: smooth;
+
+
+body {
+  background: transparent;
+  /* Keep body background clear so html bg shows */
 }
+
+/* Optional: dark overlay for readability */
+/*
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: -1;
+}
+*/
 
 /* HeroCards background shadow */
 .shadow {
@@ -22,12 +36,14 @@ html {
     background: hsl(var(--primary) / 20%);
     right: 460px;
   }
+
   to {
     background: hsl(var(--primary) / 80%);
     right: 160px;
   }
 }
 
+/* Responsive adjustments */
 @media (max-width: 1024px) {
   .shadow {
     top: 70px;
@@ -38,6 +54,7 @@ html {
       background: hsl(var(--primary) / 20%);
       right: 460px;
     }
+
     to {
       background: hsl(var(--primary) / 50%);
       right: 160px;
@@ -58,6 +75,7 @@ html {
       background: hsl(var(--primary) / 20%);
       right: 280px;
     }
+
     to {
       background: hsl(var(--primary) / 30%);
       right: 100px;
