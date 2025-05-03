@@ -1,6 +1,6 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { ChartIcon, WalletIcon, MagnifierIcon } from "./Icons";
-import cubeLeg from "../assets/cube-leg.png"; // Replace later with your roadmap visual
+ // Replace later with your roadmap visual
 import spaceman from "../assets/Spaceman_Solo.png";
 
 interface RoadmapStep {
