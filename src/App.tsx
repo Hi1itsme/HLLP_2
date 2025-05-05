@@ -8,28 +8,35 @@ import { Navbar } from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import { Roadmap } from "./components/Road";
 import { Socials } from "./components/Socials";
-import SpaceBG from "./assets/Space_BG_2.jpeg"; // ✅ Import the background
+import { AnimatedTerminal } from "./components/AnimatedTerminal"; // ✅ NEW
+import SpaceBG from "./assets/Space_BG_2.jpeg";
 import "./App.css";
 
 function App() {
   return (
     <div
-      style={{
-        backgroundImage: `url(${SpaceBG})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        minHeight: "100vh", // ensures it covers the whole page
-      }}
+      className="bg-cover bg-center bg-no-repeat min-h-screen"
+      style={{ backgroundImage: `url(${SpaceBG})` }}
     >
       <Navbar />
-      <WhatIsIt />
-      <HowItWorks />
-      <Stats />
-      <Roadmap />
-      <Tokenomics />
-      <Socials />
-      <FAQ />
+      <main className="flex flex-col gap-10 px-4 sm:px-6 md:px-10 max-w-screen-xl mx-auto">
+        <WhatIsIt />
+        
+        {/* ✅ New Terminal Section */}
+        <section className="py-16 bg-black/80 rounded-xl shadow-lg px-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-10">
+            Terminal Preview
+          </h2>
+          <AnimatedTerminal />
+        </section>
+
+        <HowItWorks />
+        <Stats />
+        <Roadmap />
+        <Tokenomics />
+        <Socials />
+        <FAQ />
+      </main>
       <Footer />
       <ScrollToTop />
     </div>
